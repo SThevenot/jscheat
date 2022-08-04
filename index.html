@@ -1,0 +1,181 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/ef232dddea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Sarah Thevenot</h1>
+        <nav>
+          <ul>
+            <li><a href="#operators">Operators</a></li>
+            <li><a href="#if-else">If/Else</a></li>
+            <li><a href="#arrays-for-loops">Arrays/For Loops</a></li>
+            <li><a href="#methods">Methods</a></li>
+          </ul>
+        </nav>
+      </header>
+    </main>
+    <section id="operators">
+      <h1>Operators</h1>
+      <div class="strict-equality-operator">
+        <h2>Strict Equality Operator</h2>
+        <p>===</p>
+        <p>checks value AND data type</p>
+      </div>
+      <div class="equality-operator">
+        <h2>Equality Operator</h2>
+        <p>==</p>
+        <p>checks value NOT data type</p>
+      </div>
+      <div class="logical-not">
+        <h2>Logical Not</h2>
+        <p>!</p>
+        <p>
+          turns an expression that evaluates to true to false and vice versa
+        </p>
+      </div>
+      <div class="arithmetic">
+        <h2>Arithmetic operators</h2>
+        <p>console.log(a + b);</p>
+        <p>
+          combine with numbers to form an expression that returns a single
+          number
+        </p>
+      </div>
+      <div class="truthy">
+        <h2>Truthy</h2>
+        <p>&&</p>
+        <p>
+          Evaluates to true if expression1 AND expression2 are both true,
+          otherwise false
+        </p>
+      </div>
+      <div class="falsey">
+        <h2>Falsey</h2>
+        <p>||</p>
+        <p>
+          Evaluates to true if expression1 OR expression2 is true, otherwise
+          false
+        </p>
+      </div>
+    </section>
+    <hr />
+    <section id="if-else">
+      <h1>If/Else Statements</h1>
+      <div class="if-else-vars">
+        <p>var hungerLevel = 50;</p>
+        <p>var isLunchTime = true;</p>
+        <p>var lunchBill = 11;</p>
+      </div>
+      <div class="example1">
+        <h2>Example 1</h2>
+        // If statement
+        <p>if (hungerLevel >= 50) {</p>
+        <p>console.log("Hungry!");</p>
+        <p>}</p>
+        // Evaluates to false so nothing is logged
+        <p>if (hungerLevel < 50) {</p>
+        <p>console.log("Hungry!") }</p>
+        // Evaluates to true so "Hungry!" is logged
+      </div>
+      <div class="example2">
+        <h2>Example 2</h2>
+        // Else statement
+        <p>if (isLunchTime === true) {</p>
+        <p>console.log("Lunchtime");</p>
+        <p>} else {</p>
+        <p>console.log("Not Lunchtime");</p>
+        <p>}</p>
+        // Evaluates to true so "Lunchtime" is logged
+      </div>
+      <div class="example3">
+        <h2>Example 3</h2>
+        // Else if allows you to test more than one condition
+        <p>if (lunchBill < 10) {</p>
+        <p>console.log("Cost Rating: $");</p>
+        <p>} else if (lunchBill >= 10 && lunchBill < 15) {</p>
+        <p>console.log("Cost Rating: $$");</p>
+        <p>} else {</p>
+        <p>console.log("Cost Rating: $$$");</p>
+        <p>}</p>
+        // The first condition is false, so the second condition is evaluated.
+        Logs "Cost Rating: $$""
+      </div>
+    </section>
+    <hr />
+    <section id="arrays-for-loops">
+      <h1>Arrays/For Loops/Iterations</h1>
+      <div class="array-ex1">
+        <h2>Array Ex. 1</h2>
+        <p>var studentNames = ["Becky", "Tom", "Frank", "Ricky"];</p>
+        <p>console.log("Welcome to the class " + studentNames);</p>
+        <p>studentNames[0] ="Carlie";</p>
+        <p>console.log("Welcome to the class " + studentNames);</p>
+      </div>
+      <div class="array-ex2">
+        <h2>Array Ex. 2</h2>
+        <p>if (studentNames[0] == "Becky") {</p>
+        <p>console.log("Welcome to the class " + studentNames);</p>
+        <p>}</p>
+        <p>else { console.log(studentNames[0] + " is in class");</p>
+        <p>}</p>
+      </div>
+      <div class="function-ex1">
+        <h2>Function Ex. 1</h2>
+        <p>// We use a for-loop to execute code more than once</p>
+        <p>for (var i = 0; i < 5; i++) {</p>
+        <p>// This is the block of code that will run each time</p>
+        <p>console.log("This is the current value of i: " + i + ".");</p>
+        <p>}</p>
+      </div>
+
+      <div class="function-ex2">
+        <h2>Function Ex. 2</h2>
+        <p>var students = ["Becky", "Tyler", "Carlie", "Ron"];</p>
+        <p>console.log(students.length);</p>
+        <p>for (var i = 0; i < students.length; i++) {</p>
+        <p>console.log("Great to see you, " + students[i] + "!");</p>
+        <p>}</p>
+      </div>
+      <div class="iteration-ex1">
+        <h2>Iteration Ex. 1</h2>
+        <p>function isEqual(x, y) {</p>
+        <p>if (x === y) {</p>
+        <p>console.log('They are equal in type and value');</p>
+        <p>} else if (x == y) {</p>
+        <p>console.log('They are equal in value'); }</p>
+        <p>else {</p>
+        <p>console.log('They are not equal');}</p>
+        <p>return;}</p>
+        // Logs "They are equal in type and value"
+        <p>isEqual(10, 10);</p>
+      </div>
+      <div class="iteration-ex2">
+        <h2>Iteration Ex. 2</h2>
+        <p>isEqual (10, "10")</p>
+        <p>function isEqualTakeTwo(x, y) {</p>
+        <p>if (x === y) {</p>
+        <p>console.log('They are equal in type and value');</p>
+        <p>} else if (x == y) {</p>
+        <p>console.log('They are equal in value');</p>
+        <p>} else {</p>
+        <p>console.log('They are not equal');}</p>
+        <p>return;}</p>
+        <p>isEqualTakeTwo (11, "10")</p>
+      </div>
+    </section>
+    <section id="methods"></section>
+  </body>
+</html>
